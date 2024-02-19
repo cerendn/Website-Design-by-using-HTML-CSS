@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    align-items: center;
+    height: 12vh;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.right ul {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right ul li {
+    margin-right: 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.right ul li a {
+    color: rgb(28, 77, 60, .7);
+}
+
+.right a:hover {
+    border-bottom: 1.5px solid rgb(12, 68, 1, .7);
+}
+
+.hero-section {
+    height: 100vh;
+    background: url(./img/holistik-tedavi.webp) no-repeat center center/cover;
+    opacity: .6;
+}
+
+@media screen and (max-width: 1281px) {
+    #navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #navbar .left {
+        margin-bottom: 10px;
+    }
+
+    #navbar .right {
+        margin-top: 10px;
+    }
+
+    #navbar .right ul li {
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 767px){
+    
+}
+
+.button {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+    align-items: center;
+
+
+}
+
+.button a {
+    color: white;
+    font-size: 16px;
+    border: 0 solid #ffa601;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #ffa600;
+
+}
+
+.button a:hover {
+    background-color: rgb(213, 233, 192);
+}
+
+.content {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 45%;
+    border: 1px solid rgb(213, 233, 192, .9);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    color: rgb(12, 68, 1, .7);
+}
+
+.text h3 {
+    margin-top: 0;
+}
+
+.text p {
+    margin-bottom: 0;
+}
+
+.contact-form {
+    display: flex;
+    background-color: #f4f4f4;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 15px;
+}
+
+.img-side {
+    background: url(/img/woman-sitting-yoga-pose-beach.jpg)no-repeat center center/cover;
+    width: 50vw;
+    height: 50vh;
+    opacity: .8;
+}
+
+.yaz {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+.plans {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.plans div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: rgb(12, 68, 1, .7);
+}
+
+.plans i {
+    margin-right: 10px;
+}
+
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+#name,
+#email,
+#number {
+    width: 47vw;
+    height: 35px;
+    border: 0px solid rgb(213, 233, 192);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(213, 233, 192);
+
+}
+
+button {
+    background-color: #ffa600;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(213, 233, 192);
+}
+
+footer {
+    display: flex;
+    height: 15vh;
+    background-color: rgb(213, 233, 192, .9);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
